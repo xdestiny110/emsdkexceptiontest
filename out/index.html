@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        console.log("before test")
+        try {
+            Module.test()
+        } catch (e){
+            console.log(e)
+        }
+      }
+    };
+  </script>
+  <script src="test.js"></script>
+</html>
